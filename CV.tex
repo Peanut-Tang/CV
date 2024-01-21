@@ -1,103 +1,181 @@
-\documentclass[12pt,a4paper,oneside]{ctexart}
-\CTEXsetup[format={\bfseries}]{section}
-\CTEXsetup[format={\small\bfseries}]{subsection}
-\usepackage{amsmath,amsthm,amssymb,bm,graphicx,hyperref,mathrsfs,geometry,fancyhdr,booktabs,array,float,multirow,subfigure,tcolorbox,cleveref,algorithm,algorithmicx,algpseudocode}
-\renewcommand{\algorithmicrequire}{\textbf{Input:}}  
-\renewcommand{\algorithmicensure}{\textbf{Output:}}
+% Document class and font size
+\documentclass[a4paper,9pt]{extarticle}
 
-\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=3.00cm}
-\pagestyle{empty}
+% Packages
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{geometry} % For page margins
+\geometry{letterpaper, margin=0.75in} % Set paper size and margins
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+\usepackage{hyperref} % For hyperlinks
+\usepackage{tabularx}
+\usepackage{fancyhdr}
 
-\hypersetup{
-    colorlinks=true,
-    linkcolor=purple,
-    filecolor=purple,
-    urlcolor=purple,
-    citecolor=cyan,
-}
+% Formatting
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+%%%%%%%%%%
 
+% Begin document
 \begin{document}
 
-\begin{center}
-    \Large \textbf{Shengtang Huang}
-\end{center}
+% Disable page numbers
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\fancyhead[L]{\textit{Shengtang Huang}}
+\fancyhead[R]{\textit{\today}}
+\thispagestyle{empty} % Remove header from the first page
 
-\section*{School Address}
+% Header
+\begin{flushleft}
+\textbf{\LARGE Shengtang Huang}\\[2pt] % Name
+Undergraduate Student, University of Science and Technology of China, Hefei, China
+\\ Gmail: \href{mailto:peanuttang1320061044@gmail.com}{peanuttang1320061044@gmail.com} | School Email: \href{mailto:peanuttang@mail.ustc.edu.cn}{peanuttang@mail.ustc.edu.cn} % Contact info
+\end{flushleft}
 
-\footnotesize
-
-School of the Gifted Young
-
-Univerisity of Science and Technology of China
-
-\section*{Contact}
-
-Gmail: peanuttang1320061044@gmail.com
-
-School Email: peanuttang@mail.ustc.edu.cn
-
-\section*{Research Interest}
-
+% Education Section
+\section*{RESEARCH INTERESTS}
+\noindent
 Algorithmic graph theory; randomized algorithms and pseudorandomness; combinatorics; operations research.
+% Education Section
+\section*{EDUCATION}
 
-\section*{Education}
+\noindent\\
+\textbf{University of Science and Technology of China},  Hefei, China \hfill August 2022 | January 2024\\ % University name and location
+Bachelor of Computer Science and Technology (currently a sophomore student) \hfill Cumulative GPA: 3.79/4.30 \\
+School of the Gited Young (supervised by Prof. Xue Chen)
+% Additional info
 
-B.S. in Computer Science and Technology, Univerisity of Science and Technology of China (currently a sophomore student, till January 2024)
+% Experience Section
+% \section*{ACADEMIC EXPERIENCE}
+% \noindent
+% \textbf{\# Name of Employer Company} \hfill \#City, \#Country\\ % Company name and location
+% \textit{\# Your Position} \hfill \#Month \#Year | Present % Position and duration
+% \begin{itemize}
+%     \item \# Description of your job duty and responsibilities.
+%     \item \# Description of your job duty and responsibilities.
+%     \item \# Description of your job duty and responsibilities.
+%     \item \# Description of your job duty and responsibilities.
+%     \item \# Description of your job duty and responsibilities.
+%     % Job responsibilities and achievements
+% \end{itemize}
 
-School of the Gifted Young (supervised by Prof. Xue Chen)
+% \textbf{\# Name of Employer Company} \hfill \#City, \#Country\\ % Company name and location
+% \textit{\# Your Position} \hfill \#Month \#Year | Present % Position and duration
+% \begin{itemize}
+%     \item \# Description of your job duty and responsibilities.
+%     \item \# Description of your job duty and responsibilities.
+%     \item \# Description of your job duty and responsibilities.
+%     \item \# Description of your job duty and responsibilities.
+%     \item \# Description of your job duty and responsibilities.
+%     % Job responsibilities and achievements
+% \end{itemize}
 
-\section*{Publications}
+% Projects Section
+% \section*{PROJECTS}
+% \noindent
+% \textbf{\# Project Name} \hfill \#City, \#Country\\ % Project name and location
+% \textit{\# Your Position}
+%    \hfill \#Month \#Year | \#Month \#Year % Project link and duration
 
+% \begin{itemize}
+%      \item \# Description of your job duty and responsibilities.
+%     \item \# Description of your job duty and responsibilities.
+%     \item \# Description of your job duty and responsibilities.
+% \end{itemize}
+
+\section*{PUBLICATIONS}
+% \noindent
+% \textbf{Journal paper}\\
 None
+% \textup{\# You can use some options here such as: In-Progress, Submitted, reviewed, Published}% Project name and location
+% \begin{itemize}
+%     \item \# write your publication based on common form of referencing in your field of study. For example if you study psychology APA is one of common formats. In following I brought one example
+%     \item Kahnemann, D., \& Tversky, A. (1979). Prospect theory: A decision making under risk. Econometrica, 47(2), 263-291.
+% \end{itemize}
+% \noindent
+% \textbf{\# Here you can also add your other publication such as: Translation, book and so on ...}
+% \begin{itemize}
+%     \item O'Connor, J., Lages, A. (2019). Coaching the brain: Practical applications of neuroscience to coaching. Routledge.
+% \end{itemize}
 
-\section*{Teaching}
+% \section*{SELECTED COURSES}
+%     \begin{tabularx}{1\textwidth}{
+%     >{\raggedright\arraybackslash}X 
+%    >{\raggedright\arraybackslash}X }
+%       \textbf{Master's Courses}&   \textbf{Bachelor's Courses}\\ 
+%      \begin{itemize}
+%          \item \# Course that worth mentioning for committee
+%          \item \# Course that worth mentioning for committee
+%          \item \# Course that worth mentioning for committee
+%          \item \# Course that worth mentioning for committee
+%          \item \# Course that worth mentioning for committee
+%          \item \# Course that worth mentioning for committee
+%          \item \# Course that worth mentioning for committee
+%          \item \# Course that worth mentioning for committee
+%      \end{itemize}
+%      & \begin{itemize}
+%          \item \# Course that worth mentioning for committee
+%          \item \# Course that worth mentioning for committee
+%          \item \# Course that worth mentioning for committee
+%          \item \# Course that worth mentioning for committee
+%          \item \# Course that worth mentioning for committee
+%          \item \# Course that worth mentioning for committee
+%          \item \# Course that worth mentioning for committee
+%               \end{itemize}\\
+%          \textbf{Additional Courses}
+%          \begin{itemize}
+%          \item \# Course that worth mentioning for committee
+%          \item \# Course that worth mentioning for committee
+%      \end{itemize}
+%     \end{tabularx}
 
-\textbf{Univerisity of Science and Technology of China (TA)}
+\section*{AWARDS}
 
-\begin{tabular}{ll}
-    2024 Spring & Introduction to Algorithm (going to be)
-\end{tabular}
+\subsection*{Univerisity of Science and Technology of China}
+\textbf{Outstanding Freshmen/Undergraduates Scholarship}  \hfill Hefei, China\\ 
+Bronze Prize \hfill September 2023\\
 
-\section*{Honors and Awards}
+\subsection*{International Collegiate Programming Contest}
+\textbf{The 2023 ICPC Asia Shenyang Regional Contest}  \hfill Shenyang, China\\ 
+Sliver Prize, 33rd place \hfill November 2023\\ \\
+\textbf{The 2022 ICPC Jinan Shenyang Regional Contest}  \hfill Jinan, China\\ 
+Bronze Prize, 130th place \hfill November 2022\\
 
-\textbf{Univerisity of Science and Technology of China}
+\subsection*{Olympiad in Informatics}
+\textbf{National Olympiad in Informatics in Provinces}  \hfill Fuzhou, China\\ 
+First Prize \hfill 2020, 2021
 
-\begin{tabular}{ll}
-    2023 & Bronze Prize, Outstanding Freshmen/Undergraduates Scholarship.
-\end{tabular}
+\section*{TEACHINGS}
+\subsection*{Univerisity of Science and Technology of China (Teaching Assistant)}
+\textbf{Foundations of Algorithms}  \hfill 2024 Spring\\ % Company name and location
 
-\vspace{0.5cm}
 
-\textbf{International Collegiate Programming Contest}
+% \section*{ENGLISH \& GRE TESTS}
+%     \begin{tabularx}{1\textwidth}{
+%     >{\raggedright\arraybackslash}X 
+%    >{\raggedright\arraybackslash}X }
+%       \textbf{IELTS (Academic): 7.5} (overall score)&   \textbf{GRE General Test:}\\ \\
+%     Listening: XX | Reading: XX & Quant: XXX | Verbal: XXX\\
+%     Speaking: XX   | Writing: XX& Analytical writing: X\\
+%     Test date: \#Month \#Year &Test date: \#Month \#Year
+%     \end{tabularx}
 
-\begin{tabular}{ll}
-    2023 & Sliver Prize, The 2023 ICPC Asia Shenyang Regional Contest. (33rd place) \\
-    2022 & Bronze Prize, The 2022 ICPC Asia Jinan Regional Contest. (130th place)
-\end{tabular}
+% Skills Section
+% \section*{SKILLS}
+% \begin{itemize}
+%     \item \textbf{Programming:} \# Related Programming languages those can be helpful; comma separated
+%     \item \textbf{Software:} \# Related software those can be helpful; comma separated
+%     \item \textbf{Soft Skills:} \# Related soft skills those can be helpful; comma separated
+% \end{itemize}
 
-\vspace{0.5cm}
+\section*{REFERENCES}
 
-\textbf{Olympiad in Informatics}
+\textbf{Prof. Xue Chen}\\
+\textit{Professor, Department of Computer Science and Technology, University of Science and Technology of China, Hefei, China}\\
+E-mail: \href{mailto:xuechen1989@ustc.edu.cn}{xuechen1989@ustc.edu.cn} | Personal Site: http://staff.ustc.edu.cn/~xuechen1989/ \\ \\
 
-\begin{tabular}{ll}
-    2020 & Sliver Prize, Asia-Pacific Informatics Olympiad \\
-    2020, 2021 & First Prize, National Olympiad in Informatics in Provinces
-\end{tabular}
-
-\section*{Citizenship}
-
-Chinese (The People's Republic of China).
-
-\section*{Relevant Skills}
-
-Languages: Chinese(native), English(fluent).
-
-\section*{References}
-
-\begin{itemize}
-    \item \href{http://staff.ustc.edu.cn/~xuechen1989/}{Xue Chen} (Professor), Department of Computer Science and Technology, Univerisity of Science and Technology of China.
-    
-          Email: xuechen1989@ustc.edu.cn
-\end{itemize}
 
 \end{document}
