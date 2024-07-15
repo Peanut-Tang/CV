@@ -1,6 +1,6 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2024.3.27)  4 APR 2024 12:42
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2024.3.27)  16 JUL 2024 03:31
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **CV
@@ -306,60 +306,60 @@ LaTeX Font Info:    External font `cmex7' loaded for size
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <5> on input line 46.
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--132
+Underfull \hbox (badness 10000) in paragraph at lines 133--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--138
+Underfull \hbox (badness 10000) in paragraph at lines 137--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--138
+Underfull \hbox (badness 10000) in paragraph at lines 137--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--144
+Underfull \hbox (badness 10000) in paragraph at lines 143--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--144
+Underfull \hbox (badness 10000) in paragraph at lines 143--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--176
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--176
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--176
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
 [1
 
-] [2] (./CV.aux)
+]
+Underfull \hbox (badness 10000) in paragraph at lines 173--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--179
+
+ []
+
+[2] (./CV.aux)
 Package rerunfilecheck Info: File `CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  8953 strings out of 476179
  144828 string characters out of 5813072
- 465849 words of memory out of 5000000
+ 464849 words of memory out of 5000000
  29617 multiletter control sequences out of 15000+600000
  471942 words of font info for 43 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
